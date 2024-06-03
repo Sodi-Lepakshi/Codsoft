@@ -1,0 +1,261 @@
+body {
+    font-family: 'Candara';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+    background-color: #f0f6ff;
+}
+
+header {
+    background: #87CEEB; 
+    padding: 1em 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+nav ul li a:hover {
+    color: #00bfff; 
+}
+
+.home-section {
+    background: linear-gradient(135deg, #0052cc, #007bff);
+    color: #fff;
+    text-align: center;
+    padding: 8em 4em;
+    animation: slideIn 1s ease-out; 
+    height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.home-section h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+}
+
+.home-section p {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
+
+.btn {
+    display: inline-block;
+    background: #fff;
+    color: #0052cc; 
+    padding: 0.5em 1em; 
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1em; 
+    transition: background 0.3s, color 0.3s;
+}
+
+.btn:hover {
+    background: #0052cc; 
+    color: #fff;
+}
+
+/* About Section */
+.about-section {
+    background: #fff;
+    padding: 4em 2em;
+    text-align: center;
+}
+
+.about-section h2 {
+    font-size: 2.5em;
+    color: #0052cc; 
+    margin-bottom: 1em;
+}
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-content p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+.services-section {
+    background: #f9f9f9;
+    padding: 4em 2em;
+    text-align: center;
+}
+
+.services-section h2 {
+    font-size: 2.5em;
+    color: #0052cc; 
+    margin-bottom: 1em;
+}
+
+.services-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service-item {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 2em;
+    margin: 1em;
+    flex: 1 1 30%;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.service-item:hover {
+    transform: translateY(-10px);
+}
+
+.service-item i {
+    font-size: 3em;
+    color: #0052cc; 
+    margin-bottom: 0.5em;
+}
+
+.service-item h3 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.service-item p {
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+.testimonials-section {
+    background: #fff;
+    padding: 4em 2em;
+    text-align: center;
+}
+
+.testimonials-section h2 {
+    font-size: 2.5em;
+    color: #0052cc; 
+    margin-bottom: 1em;
+}
+
+.testimonials-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.testimonial-item {
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 2em;
+    margin: 1em;
+    flex: 1 1 30%;
+    text-align: center;
+}
+
+.testimonial-item img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin-bottom: 1em;
+}
+
+.testimonial-item p {
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 1em;
+}
+
+.testimonial-item h4 {
+    font-size: 1.2em;
+    color: #0052cc; 
+}
+
+.contact-section {
+    background: #0052cc; 
+    color: #fff;
+    padding: 4em 2em;
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 1em;
+}
+
+.contact-section form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-section form input,
+.contact-section form textarea {
+    padding: 1em;
+    margin-bottom: 1em;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.contact-section form button {
+    background: #fff;
+    color: #0052cc; 
+    padding: 0.75em 1.5em;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+}
+
+.contact-section form button:hover {
+    background: #007bff; 
+    color: #fff;
+}
+
+
+footer {
+    background: #0052cc; 
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
